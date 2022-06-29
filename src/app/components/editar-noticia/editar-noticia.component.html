@@ -1,0 +1,11 @@
+<div class="container-fluid">
+  <mat-dialog-content [formGroup]="form">
+      <div class="md-form">
+        <label for="content" class="mb-2">Contenido</label>
+        <textarea type="text" id="content" class="md-textarea form-control" mdbInput formControlName="contenido"></textarea>
+      </div>
+    <br>
+    <button class="btn btn-success" (click)="save()">Salvar</button>
+    <button class="btn btn-danger mx-2" (click)="exit()">Salir</button>
+  </mat-dialog-content>
+</div>
